@@ -15,3 +15,7 @@ it("should return the sum of two given numbers", () => {
 it("should return the sum of three given numbers", () => {
     expect(add("1,2,3")).toBe(6);   
 });
+
+it("should return the sum regardles of , or newline", () => {
+    expect(add("1\n2,3")).toBe(6);   
+});
