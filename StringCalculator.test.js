@@ -19,3 +19,7 @@ it("should return the sum of three given numbers", () => {
 it("should return the sum regardles of , or newline", () => {
     expect(add("1\n2,3")).toBe(6);   
 });
+
+it("should return an error for the negative number", () => {
+    expect(add("-1, -2")).toBe("Negative not allowed: ");   
+});
