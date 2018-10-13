@@ -23,3 +23,7 @@ it("should return the sum regardles of , or newline", () => {
 it("should return an error for the negative number", () => {
     expect(add("-1, -2")).toBe("Negative not allowed: ");   
 });
+
+it("should return ignore numbers bigger than 1000", () => {
+    expect(add("1000, 1001")).toBe(1000);   
+});
